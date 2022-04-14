@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kidpoint</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="svgs/kidpoint-logo-crop.svg" alt="Kidpoint logo" class="logo" />
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero container grid grid-2--cols">
+          <div class="graphic-motto">
+            <img
+              src="schema/Group 38.svg"
+              alt="Illustration of a mother holding a baby"
+              class="hero-illustration"
+            />
+          </div>
+          <div class="login">
+            <h2 class="heading-secondary">Login</h2>
+            <!-- <br /> -->
+            <form class="login-form" action="#">
+              <ul class="login-list">
+                <li>
+                  <label for="name">Username:</label>
+                  <input type="text" id="name" name="user_name" required />
+                </li>
+                <li>
+                  <label for="password">Password:</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </li>
+              </ul>
+            </form>
+            <div class="login-controller">
+              <a href="#" class="btn btn-login">Log in </a>
+              <a href="#" class="btn btn-login">Sign Up </a>
+            </div>
+          </div>
+        </div>
+        <h2 class="heading-secondary about-us">About Us</h2>
+      </section>
+
+      <section class="section-about-us container">
+        <div class="grid grid-2--cols grid--center-v">
+          <!-- DESCRIPTION 01 -->
+
+          <div class="about-us-img-box">
+            <img
+              src="svgs/undraw_toy_car.svg"
+              class="about-us-img"
+              alt="Kid playing with a car"
+            />
+          </div>
+
+          <div class="about-us-text-box">
+            <p class="about-us-description">
+              We believe that nowadays, technology can ease the life of a parent
+              more than ever.
+            </p>
+          </div>
+
+          <!-- DESCRIPTION 02 -->
+
+          <div class="about-us-text-box" id="right-text-box">
+            <p class="about-us-description">
+              With our help, you can effortlessly let your children freely
+              explore the world!
+            </p>
+          </div>
+
+          <div class="about-us-img-box">
+            <img
+              src="svgs/undraw_motherhood.svg"
+              class="about-us-img"
+              alt="Kid playing with a car"
+            />
+          </div>
+
+          <!-- DESCRIPTION 3 -->
+
+          <div class="about-us-img-box">
+            <img
+              src="svgs/undraw_play_time.svg"
+              class="about-us-img"
+              alt="Kid playing with a car"
+            />
+          </div>
+
+          <div class="about-us-text-box">
+            <p class="about-us-description">
+              Enlarge your family's horizon while staying connected!
+            </p>
+          </div>
+        </div>
+        <div class="product-purchase">
+          <p class="product-text">Don't have a bracelet for your child yet?</p>
+
+          <a href="https://www.emag.ro/" class="btn" target="_blank"
+            >Buy one here</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-copyright">
+          <a href="main-page.html">
+            <img
+              src="svgs/kidpointfooter.svg"
+              alt="Kidpoint logo"
+              class="footer-logo"
+            />
+          </a>
+          <p class="copyright">
+            Copyright &copy; 2022 by Kidpoint, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-menu">
+          <ul class="list-menu">
+            <li>
+              <a href="#" class="footer-item">Log in</a>
+            </li>
+            <li>
+              <a href="#" class="footer-item">Contact: kidpoint@gmail.com</a>
+            </li>
+            <li>
+              <a href="sign-up-page.html" class="btn-footer">Register now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
