@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44.3" viewBox="0 0 44 44.3">
+  <g id="child-icon" transform="translate(-106 -261)">
+    <g id="childrenIcon" transform="translate(104 259)">
+      <g id="Group_1" data-name="Group 1">
+        <path id="Path_3" data-name="Path 3" d="M24,26A12,12,0,1,1,36,14,12.035,12.035,0,0,1,24,26ZM24,4A10,10,0,1,0,34,14,10.029,10.029,0,0,0,24,4Z"/>
+      </g>
+      <g id="Group_2" data-name="Group 2">
+        <path id="Path_4" data-name="Path 4" d="M4,46H2V41A12.974,12.974,0,0,1,15,28H33v2H15A10.968,10.968,0,0,0,4,41Z"/>
+      </g>
+      <g id="Group_3" data-name="Group 3">
+        <path id="Path_5" data-name="Path 5" d="M38,46.3l-6.7-6.6A5.233,5.233,0,0,1,38,31.8a5.276,5.276,0,0,1,6.5.7h0A5.334,5.334,0,0,1,46,36.1a5.5,5.5,0,0,1-1.2,3.5ZM35.2,33a3.168,3.168,0,0,0-2.3.9,3.362,3.362,0,0,0-.1,4.5l.1.1,5.1,5,5.3-5.3a3.3,3.3,0,0,0-.2-4.3h0a3.362,3.362,0,0,0-4.5-.1l-.6.5-.6-.6A3.524,3.524,0,0,0,35.2,33Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
