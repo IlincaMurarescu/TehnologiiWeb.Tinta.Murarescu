@@ -1,0 +1,165 @@
+/* DESIGN CHOICES: 
+
+H2 TEXT: 24px
+NORMAL TEXT: 20px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e8f1f2;
+  font-weight: 400;
+  color: #112a46;
+}
+
+/* HEADER */
+
+.logo {
+  align-items: center;
+  transform: scale(1.2);
+  opacity: 1;
+  margin-top: 4rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SIGN UP PAGE  */
+
+.grid {
+  display: grid;
+}
+
+.grid-2--cols {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8.6rem;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.section-sign-up {
+  /* width: 100%; */
+  max-width: 190rem;
+  margin-top: 12rem !important;
+  padding: 0 8rem;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background: transparent
+    linear-gradient(147deg, #68a5de80 0%, #9dc4e6b4 5%, #e8f1f2 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 3px 5px 9px #00000033;
+  border-radius: 35px;
+  opacity: 1;
+}
+
+.heading-secondary {
+  text-align: center;
+  margin-bottom: 2.4rem;
+  margin-top: 1rem;
+  font: normal normal normal 24px/45px Roboto;
+  letter-spacing: 2.24px;
+  color: #112a46;
+  opacity: 1;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.heading-secondary::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px;
+  margin: 0 auto;
+  /* align-self: center; */
+  background: #68a5de;
+  margin-bottom: 1.6rem;
+}
+
+.sign-up-form {
+  text-align: center;
+}
+
+.sign-up-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.sign-up-list label {
+  text-align: center;
+  font: normal normal normal 20px/39px Roboto;
+  letter-spacing: 1px;
+  color: #112a46;
+  opacity: 1;
+  margin-right: 2.5rem;
+}
+
+.sign-up-list input {
+  padding: 1rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 20px;
+  opacity: 1;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  font-size: 2rem;
+}
+
+.sign-up-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-sign-up,
+.btn-sign-up:link,
+.btn-sign-up:visited {
+  text-decoration: none;
+  font: normal normal normal 20px/45px Roboto;
+  letter-spacing: 2.24px;
+  color: #112a46;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.3s;
+  border: 2px solid #68a5de;
+  border-radius: 20px;
+  opacity: 1;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
+}
+
+.btn-sign-up:hover,
+.btn-sign-up:active {
+  background-color: #68a5de;
+  color: #e8f1f2;
+}
+
+.sign-up-illustration {
+  width: 75%;
+}
+
+/* .sign-up-controller {
+  display: flex;
+  justify-content: center;
+} */
