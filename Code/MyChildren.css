@@ -1,0 +1,126 @@
+@import "General.css";
+@import "MyLocations.css";
+
+/* ---MAIN CONTAINERS--- */
+.main-container {
+  justify-content: space-around;
+  padding: 25px 50px;
+}
+
+.first-column-flex {
+  width: 25rem;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+  justify-content: center;
+
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+
+  margin-right: 2rem;
+}
+
+.second-column-flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  width: 650px;
+}
+
+.map-zone {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.map-image {
+  height: 100px;
+  background-color: rebeccapurple;
+}
+
+.button-see-locations {
+  background-color: palevioletred;
+}
+
+.notifications-card {
+  height: 210px;
+
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: -3px -1px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+/* ---CHILDREN CARD--- */
+
+.my-children-title {
+  transform: scale(0.7);
+  height: 0.6rem;
+  font: normal normal normal 24px/45px Roboto;
+}
+
+.my-children-title:after {
+  width: 15rem;
+}
+
+.mychildren-list {
+  height: 24rem;
+  display: flex;
+  flex-flow: column;
+
+  justify-content: space-evenly;
+}
+
+.mychildren-list-element {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 32px 32px;
+
+  height: 3.75rem;
+  width: 22rem;
+  margin: 0 auto;
+
+  background: #e8f1f2 0% 0% no-repeat padding-box;
+  box-shadow: 1px 3px 15px #00000029;
+  border-radius: 15px;
+  opacity: 1;
+}
+
+.child-name {
+  font: normal normal normal 17px Roboto;
+  letter-spacing: 1px;
+  color: #1c1d21;
+  opacity: 1;
+
+  padding: 11px 0 0 5px;
+}
+
+.child-details {
+  font: normal normal normal 11px Roboto;
+  letter-spacing: 1px;
+  color: #5a5b5f;
+  opacity: 1;
+
+  grid-column-start: 2;
+  padding-left: 6px;
+}
+
+.child-icon {
+  transform: scale(0.6);
+  padding-left: 25px;
+  margin-top: 6px !important;
+}
+
+.add-child-btn {
+  color: #68a5de;
+  align-self: center;
+  justify-self: center;
+  padding-top: 0.6rem !important;
+  margin: 20px;
+  height: 2.5rem;
+}
