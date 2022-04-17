@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Raport Kidpoint</title>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Kidpoint</h1>
+        <section typeof="sa:AuthorsList">
+          <h2>Authors</h2>
+          <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Andrada" />
+                <meta property="schema:additionalName" content="Maria" />
+                <meta property="schema:familyName" content="Tinta" />
+                <span property="schema:name">Andrada-Maria Tinta</span>
+              </span>
+
+              <ul>
+                <li
+                  property="schema:roleContactPoint"
+                  typeof="schema:ContactPoint"
+                >
+                  <a
+                    href="mailto:andrada.tinta@gmail.com"
+                    property="schema:email"
+                    >andrada.tinta@gmail.com</a
+                  >
+                </li>
+                <li
+                  property="schema:roleContactPoint"
+                  typeof="schema:ContactPoint"
+                >
+                  <a href="tel:0731306650" title="Click to Call">0731306650</a>
+                </li>
+              </ul>
+            </li>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Ilinca" />
+                <meta property="schema:familyName" content="Murarescu" />
+                <span property="schema:name">Ilinca Murarescu</span>
+              </span>
+
+              <ul>
+                <li
+                  property="schema:roleContactPoint"
+                  typeof="schema:ContactPoint"
+                >
+                  <a
+                    href="mailto:ilincamurarescu@gmail.com"
+                    property="schema:email"
+                    >ilincamurarescu@gmail.com</a
+                  >
+                </li>
+                <li
+                  property="schema:roleContactPoint"
+                  typeof="schema:ContactPoint"
+                >
+                  <a href="tel:0753674333" title="Click to Call">0753674333</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <section>
+        <h2>1. Introduction</h2>
+
+        <section>
+          <h3>1.1 Purpose</h3>
+          <p>
+            The purpose of this document is to present in detail the main
+            product scope, its features and how it was intended to function. It
+            could serve as a guide to new users of the product.
+          </p>
+          <h3>1.2 Product Scope</h3>
+          <p>
+            Chor (Smart Children Monitor), retitled by us as “Kidpoint”, is a
+            Web system that monitors children in real-time. When it comes to
+            benefits, we believe that nowadays, technology can ease the life of
+            a parent more than ever. Our objectives are helping parents to
+            effortlessly let their children freely explore the world and
+            enlarging their family's horizon while staying connected!
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>2. Overall Description</h2>
+        <section>
+          <h3>2.1 Product Functions</h3>
+          <p>
+            Once logged in, the user can have access to their added children's
+            location, he receives notifications, he can add new children or new
+            people who are relevant to their children's interaction. For a more
+            detailed user experience, see the user flow diagram below.
+          </p>
+          <figure>
+            <img
+              src="User Interfaces/userflow.png"
+              alt="User flow diagram"
+              style="width: 1450px; height: auto"
+            />
+            <figcaption>
+              The user flow diagram for our project, Kidpoint
+            </figcaption>
+          </figure>
+          <h3>2.2 User Classes and Characteristics</h3>
+          <p>The types of possible users on our application are:</p>
+          <ul>
+            <li>Unauthenticated user</li>
+            <p>
+              The user can read the "About Us" section of the appplication, can
+              create a new account or can log in to an existing account.
+            </p>
+            <li>Authenticated user</li>
+            <ul>
+              <li>The user can access his children's location in real-time.</li>
+              <li>The user can add new children to the children list.</li>
+              <li>The user can add new locations to the locations list.</li>
+              <li>The user can set a reference point for a specific child.</li>
+              <li>The user receives certain notifications.</li>
+            </ul>
+          </ul>
+          <h3>2.3 Operating Environment</h3>
+          <p>
+            The application will work on all operating systems available, such
+            as Windows, Linux, macOS, on all web browsers and on mobile
+            operating systems such as iOS, Android and Windows.
+          </p>
+          <h3>2.4 User Documentation</h3>
+          <p>
+            Our application will be easy to navigate on, no technological
+            requirements will be needed for the average user of the application.
+            If demanded, this entire documentation can serve as a user
+            manual/guideline of the application.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>3. External Interface Requirements</h2>
+        <section>
+          <h3>3.1 User Interfaces</h3>
+          <figure>
+            <img
+              src="User Interfaces/Main Page.jpg"
+              alt="Main Page Interface"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>Main Page that includes the login</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/About Us.jpg"
+              alt="About Us"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>
+              About Us section which will appear after scrolling through the
+              Main Page
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/Sign Up.jpg"
+              alt="Sign Up"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>Sign Up Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/Children Interface.jpg"
+              alt="Children Interface"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>My Children Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/Add Children.jpg"
+              alt="Add Children"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>Add Children Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/See Locations.jpg"
+              alt="See Locations"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>See Locations Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/Add Location.jpg"
+              alt="Add Location"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>Add Location Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/Change Reference Point.jpg"
+              alt="Change Reference Point"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>Change Reference Point Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/My Friends.jpg"
+              alt="My Friends"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>My Friends Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/Add Friend.jpg"
+              alt="Add Friend"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>Add Friend Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/My account.jpg"
+              alt="My Account"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>My Account Page</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="User Interfaces/Error Message.jpg"
+              alt="Error Message"
+              style="width: 500px; height: auto"
+            />
+            <figcaption>Error Message Example For Login</figcaption>
+          </figure>
+        </section>
+      </section>
+      <section>
+        <h2>4. System Features</h2>
+        <section>
+          <h3>4.1 Login</h3>
+          <ul>
+            <li>4.1.1 Description and Priority</li>
+            <ul>
+              <li>
+                Any user of our application must provide their already existing
+                username and their registered password in order to successfully
+                log in into our application. This is a High priority feature.
+              </li>
+            </ul>
+            <li>4.1.2 Stimulus/Response Sequences List</li>
+            <ul>
+              <li>
+                The user must enter an already existing username and their
+                password.
+              </li>
+              <li>
+                If the username does not exist in our database, an error message
+                will be displayed.
+              </li>
+              <li>
+                If the password is incorrect, an error message will be
+                displayed.
+              </li>
+              <li>
+                If both the username and password are correct, the log in is
+                successfully made and the user is officially authenticated.
+              </li>
+            </ul>
+
+            <li>4.1.3 Functional Requirements</li>
+            <ul>
+              <li>
+                The username and the password that the user is trying to enter
+                must already exist in our database.
+              </li>
+            </ul>
+          </ul>
+        </section>
+
+        <section>
+          <h3>4.2 Sign Up</h3>
+          <ul>
+            <li>4.2.1 Description and Priority</li>
+            <ul>
+              <li>
+                Any non-existing user of our application must provide a not
+                taken username, a valid e-mail address and a password in order
+                to successfully sign up into our application. This is a High
+                priority feature.
+              </li>
+            </ul>
+            <li>4.2.2 Stimulus/Response Sequences List</li>
+            <ul>
+              <li>
+                The user must enter a non-existing username, the valid e-mail
+                address and a password.
+              </li>
+              <li>
+                If the username already exists in our database, an error message
+                will be displayed, asking the user to choose another username
+                for their account.
+              </li>
+              <li>
+                If the e-mail address is invalid, an error message will be
+                displayed.
+              </li>
+              <li>
+                If the e-mail address is already used by another user account on
+                our application, an error message will be displayed.
+              </li>
+              <li>
+                If the username is not taken and the e-mail address is valid,
+                the brand new account will be created successfully.
+              </li>
+            </ul>
+
+            <li>4.2.3 Functional Requirements</li>
+            <ul>
+              <li>
+                The username and the e-mail address must not exist in our
+                database.
+              </li>
+            </ul>
+          </ul>
+        </section>
+
+        <section>
+          <h3>4.3 My Children</h3>
+          <ul>
+            <li>4.3.1 Description and Priority</li>
+            <ul>
+              <li>
+                A successfully logged in user will have access to the whole My
+                Children Page that will contain the My Children feature. This
+                feature will display a list of all registered children for that
+                specific account, which includes the name of each child and
+                their last location where they were seen on the map. This is a
+                Medium priority feature. In this feature, the user can either
+                add a new child to the list or delete an existing one.
+              </li>
+            </ul>
+            <li>4.3.2 Stimulus/Response Sequences List</li>
+            <ul>
+              <li>
+                If the user wants to delete an already existing child in the
+                list, then they should simply press the "x" button in the upper
+                right corner of each child-card.
+              </li>
+              <li>
+                If the user wants to add a new child, he has to press the "Add
+                Child" button, which then opens up in a new "Add Child Page".
+                The user has to enter the first and last name of the newly added
+                child (chosen by him) and also a unique code that they received
+                when they bought the GPS bracelet for their child.
+              </li>
+              <li>
+                If the unique code is invalid, an error message will be
+                displayed.
+              </li>
+            </ul>
+            <li>4.3.3 Functional Requirements</li>
+            <ul>
+              <li>
+                The unique code must only come from one of our certified
+                products.
+              </li>
+            </ul>
+          </ul>
+        </section>
+
+        <section>
+          <h3>4.4 Notifications Center</h3>
+          <ul>
+            <li>4.4.1 Description and Priority</li>
+            <ul>
+              <li>
+                A logged in user will constantly receive notifications related
+                to their children. The type of priority is Medium. The types of
+                notifications are:
+                <ul>
+                  <li>
+                    A child is distancing himself more than 15m away from their
+                    chosen reference point.
+                  </li>
+                  <li>A child has encountered another user's child.</li>
+                  <li>
+                    A child is getting close (less than 15m) to a location from
+                    the " My Locations" page.
+                  </li>
+                  <li>
+                    A child is getting close (less than 15m) to / distancing
+                    from a person from the " My Friends" page.
+                  </li>
+                  <li>A child has hit an obstacle (object, animal etc.).</li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul></ul>
+          </ul>
+        </section>
+
+        <section>
+          <h3>4.5 My Locations</h3>
+          <ul>
+            <li>4.5.1 Description and Priority</li>
+            <ul>
+              <li>
+                The user can create his own list of locations relevant for him,
+                constantly adding new ones. Also, for every child, he can choose
+                a certain reference point in order to be announced if the child
+                is leaving a specific space.
+              </li>
+            </ul>
+            <li>4.5.2 Stimulus/Response Sequences List</li>
+            <ul>
+              <li>
+                If the user wants to see all of his locations, he has to push
+                the "See Locations" button.
+              </li>
+              <li>
+                If the user wants to add a new location, he has to access the
+                "My Locations" page first, by pressing the "See Locations"
+                button. Then, he has to push the "Add Location" button. Where he
+                will choose a valid address on the map and a name for the new
+                location.
+              </li>
+              <li>
+                If the user wants to choose a new refence point he has to access
+                the "My Locations" page from the relevant child's profile. Then,
+                he has to push the "Change Reference Point" button and select a
+                new one from the existing locations.
+              </li>
+              <li>
+                If the user introduces an invalid address when wanting to add a
+                new location, an error message will be displayed.
+              </li>
+            </ul>
+            <li>4.5.3 Functional Requirements</li>
+            <ul>
+              <li>
+                The new address added to the locations list must be a valid one.
+              </li>
+            </ul>
+          </ul>
+        </section>
+
+        <section>
+          <h3>4.6 My Friends</h3>
+          <ul>
+            <li>4.6.1 Description and Priority</li>
+            <ul>
+              <li>
+                The user can create his own group of other users that will be
+                able to access all their children's data about their location.
+              </li>
+            </ul>
+            <li>4.6.2 Stimulus/Response Sequences List</li>
+            <ul>
+              <li>
+                If the user wants to add another friend in their list, he must
+                push the "Add Friend" button, which will then open up in the
+                "Add Friend" page. To add a friend, the user must enter the
+                username of the other account and give them a "role" such as
+                Family member, Babysitter etc.
+              </li>
+              <li>
+                If the username which the user wants to add as friend does not
+                exist, an error message will be displayed.
+              </li>
+            </ul>
+            <li>4.6.3 Functional Requirements</li>
+            <ul>
+              <li>The friend's username must already exist in our database.</li>
+            </ul>
+          </ul>
+        </section>
+
+        <section>
+          <h3>4.7 My Account</h3>
+          <ul>
+            <li>4.7.1 Description and Priority</li>
+            <ul>
+              <li>
+                The user can access and modify their account's data. This is a
+                Low priority feature.
+              </li>
+            </ul>
+            <li>4.7.2 Stimulus/Response Sequences List</li>
+            <ul>
+              <li>
+                If the user wants to modify their username/e-mail
+                address/password, he must simply push their "Edit" button.
+              </li>
+              <li>
+                If the e-mail address they are trying to modify is not a valid
+                one, an error message must be displayed.
+              </li>
+            </ul>
+            <li>4.7.3 Functional Requirements</li>
+            <ul>
+              <li>The newly modified e-mail address must be a valid one.</li>
+              <li>The newly modified username must be a non-existing one.</li>
+            </ul>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h2>5. Other Nonfunctional Requirements</h2>
+        <section>
+          <h3>5.1 Security requirements</h3>
+          <p>
+            The implementation of the application will use techniques that will
+            help prevent some cyber attacks, such as Cross Site Scripting or SQL
+            Injection.
+          </p>
+        </section>
+      </section>
+    </article>
+  </body>
+</html>
