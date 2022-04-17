@@ -1,0 +1,203 @@
+@import "General.css";
+
+/* --- MAIN VIEWPORT --- */
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+/* ---NAV BAR--- */
+
+.header {
+  /* Layout Properties */
+  top: 0px;
+  left: -11px;
+
+  /* flex: 0 1 auto; */
+
+  /* width: 1931px; */
+  height: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  /* max-width: 120rem; */
+  margin: 0 0;
+  /* UI Properties */
+  background: #68a5de 0% 0% no-repeat padding-box;
+  border: none;
+  opacity: 1;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  /* Layout Properties */
+  top: 36px;
+  left: 1147px;
+  width: 178px;
+  height: 33px;
+  /* padding: 0 17.5px 17.5px; */
+  /* UI Properties */
+  text-align: center;
+  font: normal normal normal 15px Roboto;
+  letter-spacing: 1.65px;
+  color: #e8f1f2;
+  text-shadow: 0px 3px 6px #000000a3;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.logo {
+  transform: scale(0.6);
+}
+
+/* ---MAIN CONTAINER--- */
+
+.main-container {
+  background-color: #e8f1f2;
+  height: 100px;
+
+  flex-grow: 1;
+  display: flex;
+}
+
+/* ---MY LOCATIONS CARD--- */
+
+.mylocations-card {
+  /* Layout Properties */
+  width: 550px;
+  height: 430px;
+  align-self: center;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column;
+
+  /* UI Properties */
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+/* .mylocations-title,
+.mylocations-list,
+.mylocations-buttons {
+  border: 2px solid rgba(12, 12, 12, 0.933);
+} */
+
+.mylocations-title {
+  /* flex: 1 1 0; */
+  /* height: 20px; */
+  flex-shrink: 1;
+}
+
+/* ```cards``` */
+.mylocations-list {
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.mylocations-buttons {
+  flex-shrink: 1;
+}
+
+.mylocation-title-text {
+  text-align: center;
+  text-transform: uppercase;
+  font: normal normal normal 19px Roboto;
+  letter-spacing: 1.98px;
+  color: #1c1d21;
+  opacity: 1;
+  margin: 14px auto;
+}
+
+.mylocations-list-element {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 32px 32px;
+
+  height: 65px;
+  width: 480px;
+  margin: 0 auto;
+}
+
+/* .mylocations-list-element {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 32px 32px;
+
+  height: 65px;
+  width: 480px;
+  margin: 0 auto;
+
+  background: #e8f1f2 0% 0% no-repeat padding-box;
+  box-shadow: 1px 3px 15px #00000029;
+  border-radius: 17px;
+  opacity: 1;
+} */
+
+.icon {
+  /* position: absolute;
+
+  top: -2px;
+  left: 25px; */
+
+  transform: scale(0.6);
+  padding-left: 25px;
+  padding-bottom: 2px;
+}
+
+.location-name {
+  font: normal normal normal 20px Roboto;
+  letter-spacing: 1px;
+  color: #1c1d21;
+  opacity: 1;
+
+  padding: 17px 0 0 5px;
+}
+
+.location-details {
+  font: normal normal normal 11px Roboto;
+  letter-spacing: 1px;
+  color: #5a5b5f;
+  opacity: 1;
+
+  grid-column-start: 2;
+  padding: 7px 0 0 5px;
+}
+
+/* ```buttons``` */
+
+.mylocations-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.3rem;
+
+  padding-top: 1.8rem;
+}
+
+.add-location-btn {
+  background-color: #fffbff;
+  color: #68a5de;
+
+  justify-content: center;
+  padding-top: 0.95rem !important;
+}
+
+.change-refpoint-btn {
+  background-color: #fffbff;
+  color: #68a5de;
+}
