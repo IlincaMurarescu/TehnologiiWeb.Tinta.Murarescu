@@ -1,0 +1,245 @@
+/* ---BELOW 1230PX--- */
+
+@media (max-width: 1230px) {
+  /* nav bar */
+
+  /* ---ADD CHILD--- */
+
+  .child-list label {
+    margin-left: 6%;
+    margin-right: 1%;
+  }
+
+  .child-list input {
+    margin-right: 6%;
+  }
+
+  .notification-text {
+    font-size: 56.25%;
+  }
+}
+
+/* ---BELOW 1230PX--- */
+
+@media (max-width: 1060px) {
+  /* nav bar */
+
+  /* ---ADD LOCATION--- */
+
+  .add-location-flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8rem;
+  }
+
+  .box-addloc {
+    min-height: 1030px;
+  }
+}
+
+/* ---BELOW 1060px--- */
+
+@media (max-width: 1060px) {
+  .child-list input {
+    width: 40%;
+  }
+
+  .add-child-btn2 {
+    margin-top: 0px !important;
+  }
+}
+
+/* ---BELOW 815px  --- */
+
+@media (max-width: 815px) {
+  /* nav bar */
+
+  .main-nav-list {
+    gap: 0.8rem;
+  }
+
+  /* ```card element, MY LOCATIONS``` */
+
+  .mylocations-card {
+    width: 70%;
+  }
+
+  .mylocations-list-element {
+    width: 80% !important;
+  }
+
+  .mylocations-list-element p {
+    /* transform: scale(0.9); */
+    padding-left: 3px;
+  }
+
+  .mylocations-buttons {
+    gap: 0.1rem !important;
+    justify-content: center;
+  }
+
+  .mylocations-buttons > * {
+    transform: scale(0.95);
+    padding: 0.3rem 0.9rem;
+  }
+
+  /* ```card element, MY FRIENDS``` */
+
+  .myfriends-card {
+    width: 70%;
+  }
+
+  .myfriends-list-element {
+    width: 80% !important;
+  }
+
+  .myfriends-list-element p {
+    transform: scale(0.8);
+    padding-left: 3px;
+  }
+
+  /* ---MY CHILDREN--- */
+
+  .main-container-children {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 9rem;
+  }
+
+  .box-addchildren {
+    min-height: 1200px;
+  }
+}
+
+/* ---BELOW 790  PX--- */
+
+@media (max-width: 790px) {
+  /* nav bar */
+
+  .main-nav-link {
+    font-size: 13px;
+  }
+
+  .logo {
+    transform: scale(0.5);
+  }
+
+  /* ---MY LOCATIONS--- */
+
+  .mylocations-card {
+    width: 90%;
+  }
+
+  /* ---ADD LOCATION--- */
+
+  .address-list input {
+    width: 50%;
+  }
+
+  /* ---MY FRIENDS--- */
+  .myfriends-card {
+    width: 90%;
+  }
+
+  /* ---MY CHILDREN--- */
+  .notifications-part {
+    transform: scale(0.7);
+  }
+}
+
+/* ---ABOVE 600 PX--- */
+
+@media (min-width: 600px) {
+  .logo2 {
+    display: none;
+  }
+}
+
+/* ---BELOW 600 PX--- */
+
+@media (max-width: 600px) {
+  .header {
+    height: 80px;
+    justify-content: center;
+    padding-right: 0px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* ---BELOW 500  PX--- */
+
+@media (max-width: 500px) {
+  /* nav bar */
+
+  .box {
+    position: relative;
+  }
+
+  .main-nav-link {
+    font-size: 13px;
+  }
+
+  /* ---ADD CHILD PAGE--- */
+
+  .add-child-card {
+    height: 60%;
+    width: 80%;
+  }
+  /* ---ADD LOCATION PAGE--- */
+
+  .add-location-flex {
+    transform: scale(0.9);
+  }
+}
+
+/* ---HEIGHT SMALLER THAN 550PX--- */
+@media (max-height: 550px) {
+  /* ---ADD CHILD PAGE--- */
+
+  .child-list {
+    gap: 0.5rem;
+  }
+
+  .add-child-card {
+    height: 70%;
+    width: 80%;
+  }
+
+  /* ---MY LOCATIONS PAGE--- */
+
+  .mylocations-card {
+    transform: scale(0.7);
+  }
+
+  /* ---MY FRIENDS PAGE--- */
+
+  .myfriends-card {
+    transform: scale(0.7);
+  }
+
+  /* ---MY CHILDREN--- */
+
+  .first-column-flex {
+    transform: scale(0.9);
+  }
+}
+
+/* ---HEIGHT SMALLER THAN 500PX---*/
+
+@media (max-height: 500px) {
+  /* ---ADD LOCATION PAGE */
+
+  .add-location-flex {
+    transform: scale(0.8);
+  }
+
+  .map {
+    transform: scale(1.2);
+  }
+}

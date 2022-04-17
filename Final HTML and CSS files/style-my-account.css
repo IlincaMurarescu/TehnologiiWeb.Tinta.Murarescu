@@ -1,0 +1,286 @@
+/* DESIGN CHOICES: 
+
+H2 TEXT: 24px
+NORMAL TEXT: 20px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e8f1f2;
+  font-weight: 400;
+  color: #112a46;
+  min-height: 100vh;
+}
+
+/* NAVIGATION BAR  */
+
+.header {
+  /* Layout Properties */
+  top: 0px;
+  /* left: -11px; */
+
+  /* flex: 0 1 auto; */
+
+  /* width: 1931px; */
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 4rem;
+  /* max-width: 120rem; */
+  margin: 0 0;
+  /* UI Properties */
+  background: #68a5de 0% 0% no-repeat padding-box;
+  border: none;
+  opacity: 1;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  /* Layout Properties */
+  /* top: 36px;
+  left: 1147px;
+  width: 178px;
+  height: 33px; */
+  /* padding: 0 17.5px 17.5px; */
+  /* UI Properties */
+  text-align: center;
+  font: normal normal normal 1.5rem Roboto;
+  letter-spacing: 1.65px;
+  color: #e8f1f2;
+  text-shadow: 0px 3px 6px #000000a3;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.logo {
+  transform: scale(0.6);
+}
+
+/* MY ACCOUNT */
+
+.container {
+  margin: 8.8rem auto;
+}
+
+.section-my-account {
+  /* min-height: 90vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aquamarine; */
+}
+
+.my-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+  padding: 3.5rem 6.4rem;
+  /* padding-bottom: 8rem; */
+}
+
+.heading-secondary {
+  text-align: center;
+  margin-bottom: 5rem;
+  /* margin-top: 1rem; */
+  font: normal normal normal 2.4rem/4.5rem Roboto;
+  letter-spacing: 2.24px;
+  color: #112a46;
+  opacity: 1;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.heading-secondary::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 1px;
+  margin: 0 auto;
+  /* align-self: center; */
+  background: #68a5de;
+  margin-bottom: 1.6rem;
+}
+
+.my-account-form {
+  text-align: center;
+}
+
+.my-account-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.my-account-list label {
+  text-align: center;
+  font: normal normal normal 2rem/3.9rem Roboto;
+  letter-spacing: 1px;
+  color: #112a46;
+  opacity: 1;
+  margin-right: 2.5rem;
+  flex-basis: 10rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.my-account-list input {
+  align-self: flex-start;
+  padding: 1rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 20px;
+  opacity: 1;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  font-size: 2rem;
+  flex-basis: 100%;
+}
+/* CA SA FIE ALINIATE CASUTELE DE LA FORM  */
+.my-account-item {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-edit,
+.btn-edit:link,
+.btn-edit:visited {
+  align-self: center;
+  text-decoration: none;
+  font: normal normal normal 1rem/2.7rem Roboto;
+  letter-spacing: 1px;
+  color: #112a46;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1rem;
+  transition: all 0.3s;
+  border: 2px solid #68a5de;
+  border-radius: 20px;
+  opacity: 1;
+  cursor: pointer;
+  font-family: inherit;
+  margin-left: 3rem;
+}
+
+.btn-edit:hover,
+.btn-edit:active {
+  background-color: #68a5de;
+  color: #e8f1f2;
+}
+
+.btn-save,
+.btn-save:link,
+.btn-save:visited {
+  text-decoration: none;
+  font: normal normal normal 2rem/4.5rem Roboto;
+  letter-spacing: 2.24px;
+  color: #112a46;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.3s;
+  border: 2px solid #68a5de;
+  border-radius: 20px;
+  opacity: 1;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
+}
+
+.btn-save:hover,
+.btn-save:active {
+  background-color: #68a5de;
+  color: #e8f1f2;
+}
+
+/* BELOW 1200px  */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* BELOW 970px */
+
+@media (max-width: 60.6em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-nav-list {
+    gap: 1.3rem;
+  }
+}
+
+/* BELOW 790px */
+
+@media (max-width: 50em) {
+  .main-nav-link {
+    font-size: 13px;
+  }
+
+  .logo {
+    transform: scale(0.5);
+  }
+}
+/* BELOW 600px */
+@media (max-width: 37.5em) {
+  .header {
+    height: 90px;
+    justify-content: center;
+    padding-right: 0px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* BELOW 560px */
+@media (max-width: 35em) {
+  html {
+    font-size: 30%;
+  }
+
+  .section-my-account {
+    max-width: 100vw;
+    margin-top: 22rem;
+  }
+
+  body {
+    max-width: 100vw;
+  }
+
+  .main-nav-link {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-add-friend.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Add Friend</title>
+  </head>
+  <body>
+    <div class="box">
+      <header class="header nav-open">
+        <a href="main-page.html">
+          <img class="logo" alt="Kidpoint logo" src="svgs/kidpointnav1.svg" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link" href="MyChildren.html">My children</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="MyFriends.html">My friends</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="my-account.html">My account</a>
+            </li>
+            <li><a class="main-nav-link" href="main-page.html">Log out</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section-add-friend">
+          <div class="add-friend container">
+            <p class="heading-secondary">Add friend</p>
+            <form class="add-friend-form" action="#">
+              <ul class="add-friend-list">
+                <li class="add-friend-item">
+                  <label for="name">Username:</label>
+                  <input type="text" id="name" name="user_name" required />
+                </li>
+
+                <li class="add-friend-item">
+                  <label for="select-where">Role:</label>
+                  <select id="select-where" required>
+                    <option value="">Please choose one role:</option>
+                    <option value="friends">Family member</option>
+                    <option value="youtube">Babysitter</option>
+                    <option value="podcast">Friend</option>
+                  </select>
+                </li>
+              </ul>
+            </form>
+            <a href="#" class="btn-save">Add</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

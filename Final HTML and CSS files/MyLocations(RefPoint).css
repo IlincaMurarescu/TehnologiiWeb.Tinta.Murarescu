@@ -1,0 +1,21 @@
+.checkbox,
+.selected-checkbox {
+  position: absolute;
+
+  top: 35%;
+  left: 90%;
+
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #fffbff;
+
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px #0000001a;
+}
+
+.selected-checkbox {
+  text-align: center;
+  align-content: center;
+  font: normal normal normal 15px Roboto;
+  color: #112a46;
+}

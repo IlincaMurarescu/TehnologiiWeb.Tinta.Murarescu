@@ -1,0 +1,92 @@
+@import "MyLocations.css";
+
+/* ---MAIN CONTAINER--- */
+
+.main-container {
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---ADD CHILD CARD--- */
+
+.add-child-card {
+  background: transparent
+    linear-gradient(145deg, #68a5de6e 0%, #e8f1f2 79%, #e8f1f2 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: -3px 5px 60px #00000045;
+  border-radius: 35px;
+  opacity: 1;
+
+  /* height: 70%;
+  width: 40%; */
+
+  width: 550px;
+  height: 430px;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.title {
+  height: 5%;
+  /* flex-shrink: 1; */
+}
+
+.title::after {
+  width: 40%;
+}
+
+/* ```form``` */
+
+.child-form {
+  text-align: center;
+  justify-self: center;
+}
+
+.child-list {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+/* .child-list li {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.child-list label {
+  font: normal normal normal 20px/39px Roboto;
+  letter-spacing: 1px;
+  color: #112a46;
+  opacity: 1;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.child-list input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 10px;
+  opacity: 1;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  font-size: 1.25rem;
+  padding: 0.25rem;
+
+  flex-basis: 100%;
+
+  margin-right: 10%;
+}
+
+.add-child-btn2 {
+  background-color: transparent;
+  text-align: center;
+  width: 7rem;
+  height: 3%;
+  height: auto;
+  align-self: center;
+  color: #1c1d21;
+  /* margin-bottom: 0.8rem; */
+  margin-bottom: 10% !important;
+  margin-top: 10% !important;
+}
