@@ -1,0 +1,111 @@
+@import "MyLocations.css";
+
+/* ---MAIN CONTAINER--- */
+.main-container {
+  align-items: center;
+  justify-content: center;
+}
+
+/* ```flex container``` */
+
+.add-location-flex {
+  display: flex;
+  justify-content: space-between;
+
+  height: 20rem;
+  gap: 6rem;
+
+  /* background-color: blueviolet; */
+}
+
+/* ---ADD LOCATION CARD--- */
+
+.add-location-card {
+  width: 29rem;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+
+  background: transparent
+    linear-gradient(139deg, #68a5de6e 0%, #e8f1f2 79%, #e8f1f2 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: -3px 5px 60px #00000045;
+  border-radius: 35px;
+  opacity: 1;
+}
+
+/* ```title``` */
+
+.title {
+  height: 5%;
+}
+
+.title::after {
+  width: 210px;
+}
+
+/* ```form``` */
+
+.address-form {
+  text-align: center;
+  justify-self: center;
+}
+
+.address-list {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+}
+
+.address-list label {
+  font: normal normal normal 20px/39px Roboto;
+  letter-spacing: 1px;
+  color: #112a46;
+  opacity: 1;
+  margin-right: 2rem;
+}
+
+.form-title-input {
+  margin-left: 2rem;
+}
+
+.address-list input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 10px;
+  opacity: 1;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+.add-location-btn2 {
+  background-color: transparent;
+  text-align: center;
+  width: 7rem;
+  height: 6rem;
+  height: auto;
+  align-self: center;
+  color: #1c1d21;
+  margin-bottom: 0.8rem;
+}
+
+/* ```MAP``` */
+
+.map {
+  /* transform: scale(0.5); */
+  width: auto;
+  height: 15rem;
+
+  align-self: center;
+
+  /* flex-shrink: 5; */
+}
+
+#map {
+  /* height: auto; */
+  height: 180px;
+  width: 240px;
+  align-self: center;
+}

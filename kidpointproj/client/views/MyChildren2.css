@@ -1,0 +1,148 @@
+@import "General.css";
+@import "MyLocations.css";
+
+.main-container {
+  background-color: #e8f1f2;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 5rem;
+}
+
+.first-column-flex {
+  width: 40rem;
+
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.second-column-flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: relative;
+
+  width: 65rem;
+}
+
+.map-zone {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.button-see-locations {
+  background-color: palevioletred;
+}
+
+/* NOTIFICATIONS */
+
+.notifications-part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading-secondary-children {
+  /* text-align: center; */
+  /* margin-bottom: 1rem; */
+  /* margin-top: 20rem; */
+  font: normal normal normal 16px/45px Roboto;
+  letter-spacing: 2.24px;
+  color: #112a46;
+  opacity: 1;
+  text-transform: uppercase;
+  /* position: absolute;
+  top: 30px; */
+}
+
+.heading-secondary-children::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px;
+  /* margin: 0 auto; */
+  /* align-self: center; */
+  background: #68a5de;
+  margin-bottom: 1.6rem;
+}
+
+.notifications-card {
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem 3.2rem; */
+  /* align-items: center; */
+  /* gap: 1.6rem; */
+  height: 21rem;
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: -3px -1px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+  overflow-x: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.notification {
+  /* max-width: 80%; */
+  /* padding: ; */
+  margin: 1.6rem 2.4rem;
+  padding: 2rem 1.6rem;
+  display: flex;
+  /* flex-basis: 10rem; */
+  flex-grow: 0;
+  flex-shrink: 0;
+  /* justify-content: space-between; */
+  gap: 3.2rem;
+  align-items: center;
+  background: #e8f1f2 0% 0% no-repeat padding-box;
+  box-shadow: 1px 3px 15px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.notification-text {
+  /* font-size: 1.8rem; */
+  text-align: center;
+  font: normal normal normal 1.6rem/3.9rem Roboto;
+  letter-spacing: 1.98px;
+  color: #1c1d21;
+  opacity: 1;
+}
+
+.notification-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.notification-icon-people {
+  width: 3rem;
+  height: 3rem;
+}
+
+.notification-icon-home {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* .notifications-card:first-child {
+  margin-top: 1.6rem;
+} */

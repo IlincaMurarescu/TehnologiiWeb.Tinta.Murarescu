@@ -1,0 +1,180 @@
+@import "General.css";
+@import "MyLocations.css";
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---MAIN CONTAINERS--- */
+.main-container {
+  justify-content: space-evenly;
+  padding: 25px 50px;
+}
+
+.js-logout {
+  cursor: pointer;
+}
+
+.first-column-flex {
+  width: 40rem;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+  justify-content: space-evenly;
+
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+
+  margin-right: 3.2rem;
+}
+
+.second-column-flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+
+  width: 650px;
+}
+
+.map-zone {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-see-locations {
+  background-color: palevioletred;
+}
+
+.notifications-card {
+  height: 210px;
+
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: -3px -1px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+/* ---CHILDREN CARD--- */
+
+.my-children-title {
+  transform: scale(0.7);
+  height: 0.96rem;
+  font: normal normal normal 24px/45px Roboto;
+  margin-bottom: 4rem !important;
+}
+
+.my-children-title:after {
+  width: 24rem;
+}
+
+.mychildren-list {
+  height: 60%;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.mychildren-list-element {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 32px 32px;
+
+  height: 6rem;
+  width: 90%;
+
+  margin: 0 auto;
+
+  background: #e8f1f2 0% 0% no-repeat padding-box;
+  box-shadow: 1px 3px 15px #00000029;
+  border-radius: 15px;
+  opacity: 1;
+}
+
+.child-name {
+  font: normal normal normal 17px Roboto;
+  letter-spacing: 1px;
+  color: #1c1d21;
+  opacity: 1;
+
+  padding: 11px 0 0 5px;
+}
+
+.child-details {
+  font: normal normal normal 11px Roboto;
+  letter-spacing: 1px;
+  color: #5a5b5f;
+  opacity: 1;
+
+  grid-column-start: 2;
+  padding-left: 6px;
+}
+
+.child-icon {
+  transform: scale(0.6);
+  padding-left: 25px;
+  margin-top: 6px !important;
+}
+
+.add-child-btn {
+  color: #68a5de;
+  align-self: center;
+  justify-self: center;
+  padding-top: 0.96rem !important;
+  margin: 20px;
+  height: 4rem;
+}
+
+/* ---MAP--- */
+
+.map-mychildren {
+  /* transform: scale(0.5); */
+
+  height: auto;
+  width: 400px;
+}
+
+#map {
+  /* height: auto; */
+  height: 180px;
+  width: 400px;
+}
+
+.btn-add-loc,
+.btn-add-loc:link,
+.btn-add-loc:visited {
+  align-self: center;
+  text-decoration: none;
+  font: normal normal normal 1rem/2.7rem Roboto;
+  letter-spacing: 1px;
+  color: #112a46;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1rem;
+  transition: all 0.3s;
+  border: 2px solid #68a5de;
+  border-radius: 20px;
+  opacity: 1;
+  cursor: pointer;
+  font-family: inherit;
+  margin-left: 3rem;
+  margin-top: 10px;
+}
+
+.btn-add-loc:hover,
+.btn-add-loc:active {
+  background-color: #68a5de;
+  color: #e8f1f2;
+}
