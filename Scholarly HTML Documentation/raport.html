@@ -64,6 +64,13 @@
                 </li>
               </ul>
             </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?fbclid=IwAR1EwqpvzNun2U9CEHSVcYAonZQ3kKjrvSl7GANMth1nxdXZkpzihUCpCys&v=biGU3sMSlpM&feature=youtu.be"
+                title="Click to watch"
+                >YouTube Demo</a
+              >
+            </li>
           </ul>
         </section>
       </header>
@@ -118,7 +125,15 @@
             </p>
             <li>Authenticated user</li>
             <ul>
-              <li>The user can access his children's location in real-time.</li>
+              <li>
+                The user can access his children's location in real-time and the
+                distance to a set reference point.
+              </li>
+              <li>
+                The user can access another user's children's location in
+                real-time and the distance to a set reference point (if the
+                other user has added the current one to its friends list).
+              </li>
               <li>The user can add new children to the children list.</li>
               <li>The user can add new locations to the locations list.</li>
               <li>The user can set a reference point for a specific child.</li>
@@ -398,11 +413,7 @@
                     A child is getting close (less than 15m) to a location from
                     the " My Locations" page.
                   </li>
-                  <li>
-                    A child is getting close (less than 15m) to / distancing
-                    from a person from the " My Friends" page.
-                  </li>
-                  <li>A child has hit an obstacle (object, animal etc.).</li>
+                  <li>A child has hit an obstacle (has fallen etc.).</li>
                 </ul>
               </li>
             </ul>
@@ -522,8 +533,8 @@
           <h3>5.1 Security requirements</h3>
           <p>
             The implementation of the application will use techniques that will
-            help prevent some cyber attacks, such as Cross Site Scripting or SQL
-            Injection.
+            help prevent some cyber attacks, such as SQL Injection (using
+            prepare statements and binding parameters to the sql query).
           </p>
         </section>
       </section>
