@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-my-account.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Account</title>
+  </head>
+  <body>
+    <header class="header nav-open">
+      <a href="main-page.html">
+        <img class="logo" alt="Kidpoint logo" src="svgs/kidpointnav1.svg" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="MyChildren.html">My children</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="MyFriends.html">My friends</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="my-account.html">My account</a>
+          </li>
+          <li><a class="main-nav-link js-logout">Log out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-my-account">
+        <div class="my-account container">
+          <p class="heading-secondary">My account</p>
+          <form class="my-account-form" method="post">
+            <ul class="my-account-list">
+              <!-- <li class="my-account-item">
+                <label for="name"> Current username:</label>
+                <input type="text" id="name" name="user_name" required />
+              </li> -->
+
+              <li class="my-account-item">
+                <label for="email">E-mail:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your new e-mail"
+                  required
+                />
+              </li>
+            </ul>
+          </form>
+          <!-- <a href="#" class="btn-save">Save</a> -->
+          <button type="submit" name="submit" class="btn-save js-save">
+            Save
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="../controller_auth/update-email.js"></script>
+    <script src="../controller_auth/logout.js"></script>
+  </body>
+</html>

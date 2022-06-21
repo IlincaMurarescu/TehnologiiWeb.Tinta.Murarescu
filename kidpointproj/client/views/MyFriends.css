@@ -1,0 +1,150 @@
+@import "General.css";
+@import "MyLocations.css";
+
+/* ---MY LOCATIONS CARD--- */
+
+.myfriends-card {
+  /* Layout Properties */
+  width: 550px;
+  height: 430px;
+  align-self: center;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column;
+
+  /* UI Properties */
+  background: #fffbff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 20px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.myfriends-title {
+  /* flex: 1 1 0; */
+  /* height: 20px; */
+  flex-shrink: 1;
+}
+
+.myfriends-title-text {
+  text-align: center;
+  text-transform: uppercase;
+  font: normal normal normal 19px Roboto;
+  letter-spacing: 1.98px;
+  color: #1c1d21;
+  opacity: 1;
+  margin: 14px auto;
+}
+
+/* .my-friends-title:after {
+  width: 15rem;
+} */
+
+/* ```cards``` */
+.myfriends-list {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  /* overflow-y: scroll; */
+}
+
+.myfriends-buttons {
+  flex-shrink: 1;
+}
+
+.myfriends-title-text {
+  text-align: center;
+  text-transform: uppercase;
+  font: normal normal normal 19px Roboto;
+  letter-spacing: 1.98px;
+  color: #1c1d21;
+  opacity: 1;
+  margin: 14px auto;
+}
+
+.myfriends-title:after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 1px;
+  margin: 0 auto;
+  /* align-self: center; */
+  background: #68a5de;
+  margin-bottom: 1.6rem;
+}
+
+.myfriends-list-element {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 32px 32px;
+
+  height: 65px;
+  width: 480px;
+  margin: 0 auto;
+}
+
+.friend-role {
+  font: normal normal normal 11px Roboto;
+  letter-spacing: 1px;
+  color: #5a5b5f;
+  opacity: 1;
+  grid-column-start: 2;
+  padding-left: 6px;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  /* position: absolute;
+
+  top: -2px;
+  left: 25px; */
+
+  transform: scale(0.6);
+  padding-left: 25px;
+  padding-bottom: 2px;
+}
+
+.friends-icon {
+  padding-top: 12px !important;
+}
+
+.friend-name {
+  font: normal normal normal 20px Roboto;
+  letter-spacing: 1px;
+  color: #1c1d21;
+  opacity: 1;
+
+  padding: 12px 0 0 7px;
+}
+
+.friend-details {
+  font: normal normal normal 11px Roboto;
+  letter-spacing: 1px;
+  color: #5a5b5f;
+  opacity: 1;
+
+  grid-column-start: 2;
+  padding: 7px 0 0 5px;
+}
+
+/* ```buttons``` */
+
+.friends-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+
+  height: 30%;
+  padding-top: 1.8rem;
+}
+
+.add-friend-btn {
+  background-color: #fffbff;
+  color: #68a5de;
+
+  justify-content: center;
+  margin-bottom: 5%;
+  /* height: 40%; */
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="AddLocation.css" />
+    <link rel="stylesheet" href="General.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kidpoint</title>
+    <style>
+      #map {
+        /* height: 230px;
+        width: 370px;
+        align-self: center; */
+        /* background-color: blueviolet; */
+        width: 30rem;
+        height: 15rem;
+        align-self: center;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-addloc">
+      <header class="header nav-open">
+        <a href="main-page.html">
+          <img class="logo" alt="Kidpoint logo" src="SVG/kidpointnav1.svg" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link" href="MyChildren.html">My children</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="MyFriends.html">My friends</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="my-account.html">My account</a>
+            </li>
+            <li><a class="main-nav-link js-logout">Log out</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="main-container main-container-addloc">
+        <div class="add-location-flex">
+          <div class="add-location-card">
+            <div class="add-location-title title">Add location</div>
+            <form class="address-form" id="address-form" action="#">
+              <ul class="address-list">
+                <li>
+                  <label for="name">Title:</label>
+                  <input
+                    class="form-title-input"
+                    type="text"
+                    id="name"
+                    name="address_name"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="address">Address:</label>
+                  <input type="text" id="address" name="address" required />
+                </li>
+              </ul>
+            </form>
+            <a href="#" class="add-location-btn2 btn add-location-js">Add</a>
+          </div>
+          <!-- <img class="map" src="Images/mapDemo.jpg" /> -->
+          <div id="map"></div>
+        </div>
+      </section>
+    </div>
+    <script src="../controller_maps/addLocation.js "></script>
+    <script src="../controller_auth/logout.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAON0S-VxHGI4z9gf3Q-HKuM1yzJzgAIrg&libraries=places&callback=initAutocomplete"
+    ></script>
+  </body>
+</hmtl>
